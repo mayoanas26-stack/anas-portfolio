@@ -1,25 +1,14 @@
-import { Briefcase, Calendar } from 'lucide-react';
+import { Briefcase, Calendar, MapPin } from 'lucide-react';
 import './Experience.css';
 
 const Experience = () => {
   const experiences = [
     {
-      title: 'Junior Software Engineer Intern',
-      organization: 'GreenTech Solutions Inc.',
-      date: 'Upcoming',
-      status: 'upcoming'
-    },
-    {
-      title: 'Student Intern',
+      title: 'On-the-job Training (OJT)',
       organization: 'DICT Region 10 Iligan City',
+      address: 'Iligan City Hall, Buhanginan Hills, Pala-o, Iligan City, 9200 Lanao del Norte',
       date: 'Present',
       status: 'current'
-    },
-    {
-      title: 'Data Analytics Workshop Facilitator',
-      organization: 'Local Tech Hub Mindanao',
-      date: '2023',
-      status: 'completed'
     }
   ];
 
@@ -43,6 +32,10 @@ const Experience = () => {
                   <span className={`status-badge ${exp.status}`}>{exp.status}</span>
                 </div>
                 <h4 className="organization">{exp.organization}</h4>
+                <div className="experience-address">
+                  <MapPin size={14} />
+                  <span>{exp.address}</span>
+                </div>
                 <div className="experience-date">
                   <Calendar size={16} />
                   <span>{exp.date}</span>
