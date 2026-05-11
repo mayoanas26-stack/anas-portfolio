@@ -1,5 +1,6 @@
 import { MapPin, BookOpen } from 'lucide-react';
 import './Education.css';
+import msuLogo from '/msulogo.png';
 
 const Education = () => {
   return (
@@ -11,7 +12,7 @@ const Education = () => {
           <div className="education-item premium-card reveal reveal-delay-1">
             <div className="education-header-row">
               <div className="education-logo-box">
-                <img src="/msulogo.png" alt="MSU Logo" className="education-main-logo" />
+                <img src={msuLogo} alt="MSU Logo" className="education-main-logo" />
               </div>
               
               <div className="education-header-info">

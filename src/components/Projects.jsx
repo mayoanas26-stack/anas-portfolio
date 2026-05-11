@@ -1,5 +1,6 @@
 import { ExternalLink, ArrowRight } from 'lucide-react';
 import './Projects.css';
+import chickenImg from '/chicken.jpg';
 
 const Projects = () => {
   return (
@@ -15,7 +16,7 @@ const Projects = () => {
           <div className="project-card featured-project reveal reveal-delay-2 card">
             <div className="project-image">
               <img 
-                src="/chicken.jpg" 
+                src={chickenImg} 
                 alt="Poultry Farm IoT System" 
               />
               <div className="project-overlay">

@@ -1,5 +1,6 @@
 import { Leaf, Heart, Globe, ArrowRight } from 'lucide-react';
 import './About.css';
+import profileImg from '/profile.jpg';
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
             <div className="premium-image-wrapper">
               <div className="image-backdrop"></div>
               <img 
-                src="/profile.jpg" 
+                src={profileImg} 
                 alt="Anas Mayo Portrait" 
                 className="premium-profile-image"
               />
