@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer-qr-section">
           <h3>Scan to Visit</h3>
           <img 
-            src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://anasmayo.com" 
+            src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://mayoanas26-stack.github.io/anas-portfolio/" 
             alt="Portfolio QR Code" 
             className="footer-qr" 
           />
